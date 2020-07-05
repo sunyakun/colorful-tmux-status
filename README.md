@@ -1,7 +1,7 @@
 colorful tmux status
 ====================
 
-c
+Colorful your tmux status bar. Select a [powerline font](https://github.com/powerline/fonts).
 
 Install
 --------
@@ -12,6 +12,6 @@ git clone https://github.com/sunyakun/colorful-tmux-status
 cp colorful-tmux-status/.tmux.conf ~/.tmux.conf
 ```
 
-Screnshot
+Screenshot
 ---------
 ![screenshot](./screenshot/screenshot1.png)
