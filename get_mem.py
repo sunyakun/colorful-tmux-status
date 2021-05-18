@@ -32,8 +32,8 @@ if __name__ == '__main__':
     meminfo = meminfo_to_dict(meminfo)
 
     total = meminfo['MemTotal']['value']
-    free = meminfo['MemFree']['value']
-    unit = meminfo['MemFree']['unit']
+    free = meminfo['MemAvailable']['value']
+    unit = meminfo['MemAvailable']['unit']
     print(json.dumps({
         'total': total,
         'free': free,

@@ -2,12 +2,13 @@
 import os
 from setting import *
 
+get_mem_exec_pth = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'get_mem.py')
 
 themes = {
     "default": {
         "left": {
             "format": ["#(date '+%m/%d %H:%M')", "session:#S", "win:#W", "n-panes:#{window_panes}",
-                       "MEM:#(~/.tmux/get_mem.py|jq .rate)%"],
+                       f"MEM(used):#({get_mem_exec_pth}|jq .rate)%"],
             "color": ['#cd6839', '#ffff00', '#1e90ff', '#00cd66', '#b0a6cd']
         },
         "right": {
